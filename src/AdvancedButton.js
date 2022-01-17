@@ -4,26 +4,21 @@ import randomColor from 'randomcolor';
 export default function AdvancedButton() {
   const [hue, setHue] = useState('');
   const [lum, setLum] = useState('');
-
   const [color, setColor] = useState();
 
-  const handleGenerate = () => {
-    const color = randomColor({
-      luminosity: { lum },
-      hue: { hue },
-    });
-
-    setColor(color);
+  const hueLum = {
+    luminosity: lum,
+    hue: hue,
   };
 
   return (
     <div className="body">
       <div style={{ backgroundColor: color }} className="container">
-        <button onClick={handleGenerate}>Generate</button>
+        <button onClick={() => setColor(randomColor(hueLum))}>Generate</button>
       </div>
       <label>
         {' '}
-        Type in a hue
+        Type in a hue:
         <input
           value={hue}
           onChange={(event) => {
@@ -33,7 +28,7 @@ export default function AdvancedButton() {
       </label>
       <label>
         {' '}
-        Type in a hue
+        Type in a lum:
         <input
           value={lum}
           onChange={(event) => {
@@ -41,7 +36,7 @@ export default function AdvancedButton() {
           }}
         />
       </label>
-      {hue} {color}
+      {hue} {lum} <p>Generated Color: {color}</p>
     </div>
   );
 }

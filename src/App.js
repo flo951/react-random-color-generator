@@ -6,12 +6,7 @@ import RandomColorButton from './RandomColorButton';
 function App() {
   return (
     <div>
-      <div>
-        <RandomColorButton />
-      </div>
-      <div>
-        <AdvancedButton />
-      </div>
+      <AdvancedButton />
     </div>
   );
 }
