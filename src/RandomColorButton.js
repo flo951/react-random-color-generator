@@ -7,14 +7,13 @@ export default function RandomColorButton() {
   const handleGenerate = () => {
     const color = randomColor();
     setColor(color);
-
-    console.log(color);
   };
   return (
-    <div style={{ backgroundColor: color }} className="container">
-      <button onClick={handleGenerate} backgroundcolor={color}>
-        Generate {color}
-      </button>
+    <div className="body">
+      <div style={{ backgroundColor: color }} className="container">
+        <button onClick={handleGenerate}>Generate</button>
+      </div>
+      <p>Generated Color: {color}</p>
     </div>
   );
 }

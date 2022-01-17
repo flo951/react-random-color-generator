@@ -1,11 +1,17 @@
 import randomcolor from 'randomcolor';
+import AdvancedButton from './AdvancedButton';
 import './App.css';
 import RandomColorButton from './RandomColorButton';
 
 function App() {
   return (
     <div>
-      <RandomColorButton />
+      <div>
+        <RandomColorButton />
+      </div>
+      <div>
+        <AdvancedButton />
+      </div>
     </div>
   );
 }
