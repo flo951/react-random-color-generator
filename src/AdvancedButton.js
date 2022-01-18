@@ -15,6 +15,9 @@ export default function AdvancedButton() {
     <div className="body">
       <div style={{ backgroundColor: color }} className="container">
         <button onClick={() => setColor(randomColor(hueLum))}>Generate</button>
+        <div>
+          {hue} {lum} <p>Generated Color: {color}</p>
+        </div>
       </div>
       <label>
         Type in a hue:
@@ -34,7 +37,6 @@ export default function AdvancedButton() {
           }}
         />
       </label>
-      {hue} {lum} <p>Generated Color: {color}</p>
     </div>
   );
 }
