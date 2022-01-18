@@ -16,7 +16,7 @@ export default function AdvancedButton() {
       <div style={{ backgroundColor: color }} className="container">
         <button onClick={() => setColor(randomColor(hueLum))}>Generate</button>
         <div>
-          {hue} {lum} <p>Generated Color: {color}</p>
+          {hue} {lum} <div>Generated Color: {color}</div>
         </div>
       </div>
       <label>
