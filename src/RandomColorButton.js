@@ -1,4 +1,4 @@
-import { useState } from 'react';
+/* import { useState } from 'react';
 import randomColor from 'randomcolor';
 
 export default function RandomColorButton() {
@@ -17,3 +17,5 @@ export default function RandomColorButton() {
     </div>
   );
 }
+
+*/
