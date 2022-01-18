@@ -17,7 +17,6 @@ export default function AdvancedButton() {
         <button onClick={() => setColor(randomColor(hueLum))}>Generate</button>
       </div>
       <label>
-        {' '}
         Type in a hue:
         <input
           value={hue}
@@ -27,7 +26,6 @@ export default function AdvancedButton() {
         />
       </label>
       <label>
-        {' '}
         Type in a lum:
         <input
           value={lum}
