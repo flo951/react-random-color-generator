@@ -14,13 +14,17 @@ export default function AdvancedButton() {
   return (
     <div className="body">
       <div style={{ backgroundColor: color }} className="container">
-        <button onClick={() => setColor(randomColor(hueLum))}>Generate</button>
+        <button
+          style={{ backgroundColor: color }}
+          onClick={() => setColor(randomColor(hueLum))}
+        >
+          Generate
+        </button>
+        <p>Generated Color: {color}</p>
       </div>
       <div>
-        {hue} {lum}{' '}
-        <div style={{ backgroundColor: color, color: color }}>
-          Generated Color: {color}
-        </div>
+        {hue} {lum}
+        <div style={{ backgroundColor: color }}></div>
       </div>
       <label>
         Type in a hue:
