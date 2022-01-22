@@ -24,7 +24,7 @@ export default function AdvancedButton() {
       </div>
       <div>
         {hue} {lum}
-        <div style={{ backgroundColor: color }}></div>
+        <div style={{ backgroundColor: color }} />
       </div>
       <label>
         Type in a hue:
