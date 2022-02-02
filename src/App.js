@@ -15,7 +15,7 @@ export default function App() {
   return (
     <div className="body">
       <div style={{ backgroundColor: color }} className="container">
-        <p>Generated Color: {color}</p>
+        Generated Color: {color}g
       </div>
       <button
         style={{ backgroundColor: color }}
