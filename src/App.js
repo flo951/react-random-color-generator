@@ -11,7 +11,7 @@ export default function App() {
     luminosity: lum,
     hue: hue,
   };
-
+  console.log(hueLum);
   return (
     <div className="body">
       <div style={{ backgroundColor: color }} className="container">
